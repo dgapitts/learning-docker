@@ -13,3 +13,4 @@ tat
 ## A Cloud Guru Course notes
 
 * [010-base-docker-package-setup-via-aptget](docs/010-base-docker-package-setup-via-aptget.md)
+* [020-hello-docker-world-and-removing-sudo-requirement](docs/020-hello-docker-world-and-removing-sudo-requirement.md)
