@@ -3,7 +3,7 @@
 
 
 
-## xxx
+## First steps `sudo docker run hello-world`
 
 ```
 cloud_user@ip-10-0-1-101:~$ sudo docker run hello-world
