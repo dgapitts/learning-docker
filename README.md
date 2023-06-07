@@ -15,3 +15,5 @@ tat
 * [010-base-docker-package-setup-via-aptget](docs/010-base-docker-package-setup-via-aptget.md)
 * [020-hello-docker-world-and-removing-sudo-requirement](docs/020-hello-docker-world-and-removing-sudo-requirement.md)
 * [030-Set-Default-Logging-Driver-to-syslog](docs/030-Set-Default-Logging-Driver-to-syslog.md)
+* [040-Building-a-Docker-Swarm](docs/040-Building-a-Docker-Swarm.md)
+
