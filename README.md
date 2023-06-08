@@ -1,13 +1,15 @@
 ## Background
 
 Notes and scripts for learning-docker
-tat
 
 
 
-## Notes General
+## General Docker Notes
 
-* [010-Working-with-Dockerfiles](docs/010-Working-with-Dockerfiles.md)
+* [Getting started with doco vagrant-c7-docker-oraclexe - my first docker demo project](https://github.com/dgapitts/vagrant-c7-docker-oraclexe)
+* [Docker Security "Cheat Sheet" from OWASP - currently 13 key rules](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html)
+* [Working-with-Dockerfiles](docs/010-Working-with-Dockerfiles.md)
+
 
 
 ## A Cloud Guru Course notes
