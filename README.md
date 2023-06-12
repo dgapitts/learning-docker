@@ -9,6 +9,7 @@ Notes and scripts for learning-docker
 * [Getting started with doco vagrant-c7-docker-oraclexe - my first docker demo project](https://github.com/dgapitts/vagrant-c7-docker-oraclexe)
 * [Docker Security "Cheat Sheet" from OWASP - currently 13 key rules](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html)
 * [Working-with-Dockerfiles](docs/010-Working-with-Dockerfiles.md)
+* [Problems with using brew for docker setup - Cannot connect to the Docker daemon ](docs/brew-for-docker-setup.md)
 
 
 

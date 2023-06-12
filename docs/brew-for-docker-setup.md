@@ -1,7 +1,12 @@
-
-
 # Problems with using brew for docker setup - Cannot connect to the Docker daemon 
 
+## TLDR
+
+For the newbie there are a surprise number of brew options for a simple docker install
+
+As per the details below none of these worked as ™pure macosx command line setup™ for me!?
+
+The "final solution" for me was to, start docker app via GUI and click on a bunch of end user agreements
 
 ##  docker: command not found
 
@@ -125,3 +130,50 @@ docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is t
 See 'docker run --help'.
 ```
 
+
+## Same problem
+
+
+```
+~/projects/learning-docker $ brew services start docker-machine
+==> Tapping homebrew/services
+Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-services'...
+remote: Enumerating objects: 2438, done.
+remote: Counting objects: 100% (2438/2438), done.
+remote: Compressing objects: 100% (1150/1150), done.
+remote: Total 2438 (delta 1139), reused 2337 (delta 1100), pack-reused 0
+Receiving objects: 100% (2438/2438), 664.79 KiB | 2.93 MiB/s, done.
+Resolving deltas: 100% (1139/1139), done.
+Tapped 1 command (45 files, 833.1KB).
+==> Successfully started `docker-machine` (label: homebrew.mxcl.docker-machine)
+```
+
+
+## Same problem
+
+
+```
+~/projects/learning-docker $ docker run --name test -d busybox sh -c "while true; do $(echo date); sleep 1; done"
+docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?.
+See 'docker run --help'.
+```
+
+
+## Final solution - start docker app via GUI and click on a bunch of end user agreements
+
+
+```
+~/projects/learning-docker $ docker run --name test -d busybox sh -c "while true; do $(echo date); sleep 1; done"
+Unable to find image 'busybox:latest' locally
+latest: Pulling from library/busybox
+71d064a1ac7d: Pull complete
+Digest: sha256:6e494387c901caf429c1bf77bd92fb82b33a68c0e19f6d1aa6a3ac8d27a7049d
+Status: Downloaded newer image for busybox:latest
+9b7f7ce1f3fecea63022a6a448d2c5961f073702421261f337d8242e95f03f44
+~/projects/learning-docker $  docker pd
+docker: 'pd' is not a docker command.
+See 'docker --help'
+~/projects/learning-docker $  docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS        PORTS     NAMES
+9b7f7ce1f3fe   busybox   "sh -c 'while true; …"   10 hours ago   Up 10 hours             test
+```
