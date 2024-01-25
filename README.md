@@ -10,7 +10,7 @@ Notes and scripts for learning-docker
 * [Docker Security "Cheat Sheet" from OWASP - currently 13 key rules](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html)
 * [Working-with-Dockerfiles](docs/010-Working-with-Dockerfiles.md)
 * [Problems with using brew for docker setup - Cannot connect to the Docker daemon ](docs/brew-for-docker-setup.md)
-
+* [Build custom vidardb/postgresql:rocksdb-6.2.4_demoXX images](docs/build-custom-rocksdb-image.md)
 
 
 ## A Cloud Guru Course notes
