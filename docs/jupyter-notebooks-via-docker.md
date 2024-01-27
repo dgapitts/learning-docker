@@ -24,7 +24,7 @@ latest: Pulling from jupyter/base-notebook
 
  note:
  * The token above is dynamically generated each rum
- * you also need `install matplotlib` i.e. this regular 
+ * you also need `install matplotlib` i.e. this regular `import matplotlib.pyplot as plt` command fails
 
 ```
  ---------------------------------------------------------------------------
@@ -34,7 +34,7 @@ Cell In[3], line 1
 
 ModuleNotFoundError: No module named 'matplotlib'
 ```
-the solution is to run (from within jupyter notebook)
+the solution is to run (again from within jupyter notebook)
 ```
 !pip install matplotlib scikit-learn
 ```
