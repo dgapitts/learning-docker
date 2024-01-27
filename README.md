@@ -11,7 +11,7 @@ Notes and scripts for learning-docker
 * [Working-with-Dockerfiles](docs/010-Working-with-Dockerfiles.md)
 * [Problems with using brew for docker setup - Cannot connect to the Docker daemon ](docs/brew-for-docker-setup.md)
 * [Build custom vidardb/postgresql:rocksdb-6.2.4_demoXX images](docs/build-custom-rocksdb-image.md)
-
+* [Setup jupyter notebooks via docker](docs/jupyter-notebooks-via-docker.md)
 
 ## A Cloud Guru Course notes
 
