@@ -36,12 +36,40 @@ ModuleNotFoundError: No module named 'matplotlib'
 ```
 the solution is to run (again from within jupyter notebook)
 ```
-!pip install matplotlib scikit-learn
+!pip install matplotlib scikit-learn pandas
 ```
 more [details in the original blog post](https://www.docker.com/blog/supercharging-ai-ml-development-with-jupyterlab-and-docker/)
 
 
  
+and a [simple barchat demo](https://stackoverflow.com/questions/67755912/barchart-plot-and-display-issue-in-jupyter-notebook-when-using-matplotlib)
+
+ ```
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+
+load = pd.DataFrame({'Data': np.random.normal(0, 1, 10000).round(1)})
+r = load['Data'].value_counts().sort_index()
+r.plot(kind='bar')
+plt.show()
+```
+
+gives:
+
+![simple normal dist](simple-normal-dist.png)
+
+
+and
+
+```
+import seaborn as sns
+sns.histplot(x=load['Data'], bins=30, kde=True)
+```
+
+
+![seaborn normal dist](seaborn-normal-dist.png)
+
 
 
 
