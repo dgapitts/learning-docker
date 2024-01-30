@@ -13,6 +13,7 @@ Notes and scripts for learning-docker
 * [Build custom vidardb/postgresql:rocksdb-6.2.4_demoXX images](docs/build-custom-rocksdb-image.md)
 * [Setup jupyter notebooks via docker](docs/jupyter-notebooks-via-docker.md)
 * [Cockroachdb setup 3 node cluster within docker](docs/cockroachdb-setup.md)
+* [CockroachDB docker compose  file - 3 node cluster with pgbench](docs/cockroach-docker-compose.md)
 
 ## A Cloud Guru Course notes
 
