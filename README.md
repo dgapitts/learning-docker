@@ -14,6 +14,7 @@ Notes and scripts for learning-docker
 * [Setup jupyter notebooks via docker](docs/jupyter-notebooks-via-docker.md)
 * [Cockroachdb setup 3 node cluster within docker](docs/cockroachdb-setup.md)
 * [CockroachDB docker compose  file - 3 node cluster with pgbench](docs/cockroach-docker-compose.md)
+* [Yugabytedb setup with big insert tests - some interesting stats](docs/yugabytedb-setup.md)
 
 ## A Cloud Guru Course notes
 
